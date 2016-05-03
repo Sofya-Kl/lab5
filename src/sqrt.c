@@ -1,7 +1,8 @@
 #include <stdio.h>
+#include <math.h>
 #include "sqrt.h"
 
-int func(double a, double b, double c) {
+int func(double a, double b, double c, double *x1, double *x2) {
 	double d;
 	int status;
 	printf("Enter a, b, c: ");
