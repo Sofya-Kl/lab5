@@ -6,8 +6,8 @@ int main() {
 	int status;
 	printf("Enter a, b, c: ");
 	scanf("%lf %lf %lf", &a, &b, &c);
-	status = func(a, b, c, x1, x2);
-	printf("\nNumber of roots = %d\n")
+	status = func(a, b, c, &x1, &x2);
+	printf("\nNumber of roots = %d\n", status);
 	if (status == 0)
 		printf("no solution");
 	if (status == 2)

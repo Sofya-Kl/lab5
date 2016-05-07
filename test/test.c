@@ -1,4 +1,4 @@
-
+#include <ctest.h>
 #include <sqrt.h>
 
 CTEST(sqrt_suite, root_test)
@@ -13,8 +13,8 @@ CTEST(sqrt_suite, root_test)
 	const int status = func(a, b, c, &x1, &x2);
 
 	//Then
-	const double expected_x1 = 1.00;
-	const double expected_x2 = 2.00;
+	const double expected_x1 = 2.00;
+	const double expected_x2 = 1.00;
 
 	ASSERT_DBL_NEAR(expected_x1, x1);
 	ASSERT_DBL_NEAR(expected_x2, x2);
