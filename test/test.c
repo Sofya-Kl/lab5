@@ -180,4 +180,24 @@ CTEST(sqrt_suite, root_test_c0)
 	ASSERT_EQUAL(2, status);
 }
 
+CTEST(sqrt_suite, root_test_a0_b0)
+{
+	//Given
+	const double a = 0.00;
+	const double b = 0.00;
+	const double c = 5.00;
+
+	//When
+	double x1 = 0, x2 = 0;
+	const int status = func(a, b, c, &x1, &x2);
+
+	//Then
+	const double expected_x1 = 0.00;
+	const double expected_x2 = 0.00;
+
+	ASSERT_DBL_NEAR(expected_x1, x1);
+	ASSERT_DBL_NEAR(expected_x2, x2);
+	ASSERT_EQUAL(0, status);
+}
+
 

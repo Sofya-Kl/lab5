@@ -18,7 +18,7 @@ int func(double a, double b, double c, double *x1, double *x2) {
 		*x2 = (-b - sqrt(d)) / (2 * a);
 		status = 2;
 	}
-	if (d < 0){
+	if ((d < 0)||(a == 0 && b == 0)){
 		status = 0;
 	}
 	return status;
